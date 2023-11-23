@@ -26,7 +26,7 @@ public class CalculatorTest {
 
     @Test
     // mutiply code change
-    public void testMultiply(int x, int y) {
+    public void testMultiply() {
         int expected = 10;
 
         int actual = calculator.multiply(5, 2);
@@ -36,7 +36,7 @@ public class CalculatorTest {
 
     @Test
     // divide code change
-    public void testDivide(int x, int y) {
+    public void testDivide() {
         int expected = 3;
 
         int actual = calculator.divide(6, 2);
