@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CalculatorTest {
@@ -69,4 +70,15 @@ public class CalculatorTest {
         int[] actual = calculator.incrementArray(new int[]{1, 2, 3});
         assertArrayEquals(expected, actual);
     }
+
+    // exception method
+
+     @Test
+    public void testDivideByZero() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
+        String expected = "Ints cannot be divided by zero";
+        String actual = exception.getMessage();
+        assertEquals(expected, actual);
+    }
+
 }

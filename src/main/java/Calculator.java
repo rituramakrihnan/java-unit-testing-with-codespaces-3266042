@@ -16,7 +16,10 @@ public class Calculator {
 
     // divide x and y method
     public int divide(int x, int y) {
-        return x/y;
+        if (y == 0) {
+            throw new IllegalArgumentException("Ints cannot be divided by zero");
+        }
+        return x / y;
     }
 
     //even method
