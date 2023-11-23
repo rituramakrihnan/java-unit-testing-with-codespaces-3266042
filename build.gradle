@@ -9,11 +9,11 @@ repositories {
     mavenCentral()
 }
 
-test{
-    useJunitPlatfrom()
+test {
+    useJUnitPlatform()
 }
 
-dependencies{
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
 }
