@@ -8,4 +8,9 @@ public class Calculator {
     public int subtract(int x, int y) {
         return x - y;
     }
+
+    // multiplying x and y method
+    public int multiply(int x, int y) {
+        return x*y;
+    }
 }
