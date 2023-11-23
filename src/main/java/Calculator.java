@@ -4,5 +4,8 @@ public class Calculator {
         return x + y;
     }
 
-
+    // subract method
+    public int subtract(int x, int y) {
+        return x - y;
+    }
 }

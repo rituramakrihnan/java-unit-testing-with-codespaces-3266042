@@ -15,4 +15,13 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSub(){
+         int expected = 3;
+
+        int actual = calculator.subtract(5, 2);
+
+        assertEquals(expected, actual);
+    }
+
 }
