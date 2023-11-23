@@ -24,11 +24,22 @@ public class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
     // mutiply code change
-    public int multiply(int x, int y) {
+    public void testMultiply(int x, int y) {
         int expected = 10;
 
         int actual = calculator.multiply(5, 2);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    // divide code change
+    public void testDivide(int x, int y) {
+        int expected = 3;
+
+        int actual = calculator.divide(6, 2);
 
         assertEquals(expected, actual);
     }

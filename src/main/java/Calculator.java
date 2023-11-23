@@ -13,4 +13,9 @@ public class Calculator {
     public int multiply(int x, int y) {
         return x*y;
     }
+
+    // divide x and y method
+    public int divide(int x, int y) {
+        return x/y;
+    }
 }
